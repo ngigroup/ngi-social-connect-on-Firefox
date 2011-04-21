@@ -1,5 +1,9 @@
-This is the nsc add-on.  It contains:
+# ngi social connect on Firefox
 
-* A program (lib/main.js).
-* A few tests.
-* Some meager documentation.
+ngi ソーシャルコネクトを、Firefoxで簡単に利用できるようにするための、拡張機能です。
+
+# authors
+ - h-kikumoto
+ - smeghead
+
+Copyright (C) 2010 ngi group, inc. 
