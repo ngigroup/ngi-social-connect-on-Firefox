@@ -2,8 +2,9 @@ $(document).ready(function() {
   var siteId = '57DZ';
   var title = CookieRead('title');
   var url = CookieRead('url');
-  document.getElementById('page_title').innerHTML = title;
-  document.getElementById('page_url').innerHTML = url;
+  
+  $('#page_title').text(title);
+  $('#page_url').text(url);
 
   var div_iine = '<div id="nsc_iine" class="nsc_iine" siteId="' + siteId + 
                  '" targetUrl="' + encodeURIComponent(url)  + 
@@ -11,13 +12,10 @@ $(document).ready(function() {
   var div_cmt = '<div id="nsc_comments" class="nsc_comments" siteId="' + siteId +
                 '" targetUrl="' + encodeURIComponent(url)  + 
                 '" targetTitle="' + title + '"></div>';
-  var buttons = document.getElementById('buttons');
-  buttons.innerHTML = div_iine + div_cmt;
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.src = 'http://ngi.s3.amazonaws.com/nsc-widgets.js';
-  var head = document.getElementsByTagName('head')[0];
-  head.appendChild(s);
+  var buttons = $('#buttons');
+  buttons.append(div_iine);
+  buttons.append(div_cmt);
+  $('head').append('<script type="text/javascript" src="http://ngi.s3.amazonaws.com/nsc-widgets.js"></script>');
 });
 
 function CookieRead(kword) {
