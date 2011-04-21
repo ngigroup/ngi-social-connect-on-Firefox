@@ -1,9 +1,9 @@
 {
-    "name": "nsc", 
+    "name": "ngi social connect on Firefox"", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
     "author": "h-kikumoto", 
-    "version": "0.1", 
-    "fullName": "nsc", 
+    "version": "1.0", 
+    "fullName": "ngi social connect on Firefox", 
     "id": "jid0-UCZsHft1A7ytuFhAjqvOGhVNdC4", 
-    "description": "nsc for firefox4"
+    "description": "ngi ソーシャルコネクトを、Firefoxで簡単に利用できるようにするための、拡張機能です。"
 }
